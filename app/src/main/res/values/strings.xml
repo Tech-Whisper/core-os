@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CORE_OS</string>
+    <string name="next_btn">Next</string>
+    <string name="skip_doc_btn">Skip Documentation</string>
+    <string name="initialize_core">Initialize CORE</string>
+    <string name="system_diagnostics">System Diagnostics</string>
+    <string name="grant_all_permissions">Grant All Permissions</string>
+    <string name="required_access">Required Access</string>
+    <string name="permissions_body">To optimize your system\'s performance, CORE_OS requires granular access to specific hardware telemetry layers. All data is processed locally.</string>
+    <string name="usage_access">Usage Access</string>
+    <string name="usage_access_desc">Monitor app activity</string>
+    <string name="battery_stats">Battery Stats</string>
+    <string name="battery_stats_desc">Analyze power drain</string>
+    <string name="network_access">Network Access</string>
+    <string name="network_access_desc">Track data usage</string>
+    <string name="encryption_active">End-to-End Encryption Active</string>
+    <string name="cyberengine_name">CyberEngine.v4</string>
+    <string name="compiler_name">Compiler.exe</string>
+    <string name="metrics_tab">METRICS</string>
+    <string name="logs_tab">LOGS</string>
+    <string name="system_tab">SYSTEM</string>
+    <string name="config_tab">CONFIG</string>
+</resources>

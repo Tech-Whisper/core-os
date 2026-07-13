@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: CORE_OS",
+  "description": "Next-gen system intelligence, monitoring system resources, active processes, and diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
