@@ -24,15 +24,12 @@ Android system monitoring app built with Kotlin, Jetpack Compose, Material Desig
 - Roborazzi (screenshot testing)
 
 ## Secrets Management
-- `.env` file (gitignored) for local API keys
-- `.env.example` (committed) for reference
-- Google Secrets Gradle Plugin maps `.env` to BuildConfig
-- `GEMINI_API_KEY` is the only secret key used
+- No API keys or `.env` files are used — the app has no remote secrets.
 - Release signing: env vars `KEYSTORE_PATH`, `STORE_PASSWORD`, `KEY_PASSWORD`
 - Debug signing: env vars `DEBUG_KEYSTORE_PATH`, `DEBUG_STORE_PASSWORD`, `DEBUG_KEY_ALIAS`, `DEBUG_KEY_PASSWORD`
 
 ## Security Notes
-- All `System.getenv()` — no hardcoded secrets in source
+- No hardcoded secrets in source.
 - OkHttp logging interceptor included — ensure `HttpLoggingInterceptor.Level` set to `NONE` or `BASIC` in production
 - ProGuard/R8 enabled for release builds
 - Debug signing credentials in `app/build.gradle.kts` use env vars with secure defaults only for local dev

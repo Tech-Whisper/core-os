@@ -42,15 +42,7 @@ git clone https://github.com/<your-username>/core-os.git
 cd core-os
 ```
 
-### 2. Set up API keys (optional)
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and replace `MY_GEMINI_API_KEY` with your actual Gemini API key from [Google AI Studio](https://aistudio.google.com/).
-
-### 3. Set up signing (for release builds)
+### 2. Set up signing (for release builds)
 
 The following environment variables are required for a signed release build:
 
@@ -69,7 +61,7 @@ For debug builds, the following env vars can be used (falls back to well-known d
 | `DEBUG_KEY_ALIAS` | Debug key alias |
 | `DEBUG_KEY_PASSWORD` | Debug key password |
 
-### 4. Build
+### 3. Build
 
 ```bash
 # Debug APK
@@ -79,7 +71,7 @@ For debug builds, the following env vars can be used (falls back to well-known d
 ./gradlew assembleRelease
 ```
 
-### 5. Run Tests
+### 4. Run Tests
 
 ```bash
 ./gradlew :app:testDebugUnitTest
@@ -117,7 +109,7 @@ For debug builds, the following env vars can be used (falls back to well-known d
 
 ## Security
 
-- No secrets are hardcoded in source code. All API keys are loaded from `.env` via the Google Secrets Gradle Plugin.
+- No secrets are hardcoded in source code.
 - Signing credentials use `System.getenv()` with secure fallbacks for local development only.
 - OkHttp logging interceptor is included — ensure `HttpLoggingInterceptor.Level` is set to `NONE` or `BASIC` in production builds.
 - ProGuard/R8 is enabled for release builds with full obfuscation and shrinking.
