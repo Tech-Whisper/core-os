@@ -27,6 +27,26 @@ CORE_OS is a high-performance, responsive system monitoring and device optimizat
 
 ---
 
+## Installation
+
+### Option A — Download Prebuilt APK (Recommended)
+
+No build tools required. Grab the latest signed `CORE_OS.apk` from the
+[GitHub Releases](https://github.com/Tech-Whisper/core-os/releases) page and install it on your device:
+
+1. Open the [Releases](https://github.com/Tech-Whisper/core-os/releases) page.
+2. Download `CORE_OS.apk` from the latest release (e.g. **CORE_OS v1.0**).
+3. On your Android device, enable **Settings → Security → Install unknown apps** for your file manager/browser.
+4. Tap the downloaded APK to install.
+
+> **Note**: The APK is built for `arm64-v8a` and `armeabi-v7a` devices (modern phones and tablets). It is **not** compatible with x86 emulators.
+
+### Option B — Build from Source
+
+Follow the [Getting Started](#getting-started) guide below to clone and build the project yourself.
+
+---
+
 ## Getting Started
 
 ### Prerequisites
